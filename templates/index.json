@@ -181,11 +181,103 @@
         "padding_top": 36,
         "padding_bottom": 44
       }
+    },
+    "promo": {
+      "type": "rich-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "Early bird offer",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "small"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Early birds save 20%",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shop before the Halloween rush and take 20% off your entire order.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Claim the offer",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "caption",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 48
+      }
+    },
+    "about": {
+      "type": "rich-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "About Cheerova",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "small"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "We take Halloween seriously",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cheerova exists for one night a year — and everything that leads to it. From tailored costumes for adults and kids to decor, props, and party essentials, we stock the season with pieces that feel premium, look dramatic, and make the night unforgettable.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "caption",
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 48,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "hero",
     "featured_collection",
-    "shop_by_category"
+    "shop_by_category",
+    "promo",
+    "about"
   ]
 }
