@@ -135,13 +135,13 @@
         "cat_7": {
           "type": "featured_collection",
           "settings": {
-            "collection": "outdoor-halloween-decor"
+            "collection": "indoor-halloween-decor"
           }
         },
         "cat_8": {
           "type": "featured_collection",
           "settings": {
-            "collection": "indoor-halloween-decor"
+            "collection": "outdoor-halloween-decor"
           }
         },
         "cat_9": {
