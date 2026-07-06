@@ -9,6 +9,15 @@
  */
 {
   "sections": {
+    "breadcrumbs": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<nav class=\"page-width\" aria-label=\"breadcrumbs\" style=\"padding:1.8rem 0 0;font-size:1.3rem;opacity:.75;\"><a href=\"/\" style=\"color:currentColor;text-decoration:none;\">Home</a><span aria-hidden=\"true\"> / </span><a href=\"/collections/all\" style=\"color:currentColor;text-decoration:none;\">Shop</a><span aria-hidden=\"true\"> / </span><span>{{ product.title }}</span></nav>",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -42,6 +51,15 @@
           "type": "description",
           "settings": {}
         },
+        "tab_sizing": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Size & fit help",
+            "icon": "ruler",
+            "content": "<p>Every costume lists its exact measurements and included pieces in the description above. Many styles run small — when a product includes a fit note, follow it, and if you're between sizes, choose the larger one. Still unsure? <a href=\"/pages/contact\">Ask us</a> and we'll help you pick.</p>",
+            "page": ""
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -56,18 +74,19 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "tab_sizing",
         "share"
       ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "media_position": "left",
-        "gallery_layout": "stacked",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
+        "gallery_layout": "thumbnail",
+        "mobile_thumbnails": "show",
+        "media_position": "left",
         "image_zoom": "lightbox",
-        "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
@@ -88,21 +107,54 @@
         "heading_size": "h2",
         "products_to_show": 4,
         "columns_desktop": 4,
+        "columns_mobile": "2",
         "color_scheme": "scheme-1",
         "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join the Cheerova list",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {}
+        },
+        "email_form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email_form"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 48,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
+    "breadcrumbs",
     "main",
     "disclosures",
-    "related-products"
+    "related-products",
+    "newsletter"
   ]
 }
