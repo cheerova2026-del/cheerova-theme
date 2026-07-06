@@ -47,6 +47,12 @@
             "show_gift_card_recipient": true
           }
         },
+        "wishlist": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'wishlist-button', product: product %}"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -73,6 +79,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "wishlist",
         "description",
         "tab_sizing",
         "share"
