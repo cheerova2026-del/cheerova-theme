@@ -188,7 +188,7 @@
         "caption": {
           "type": "caption",
           "settings": {
-            "caption": "Early bird offer",
+            "caption": "The season approaches",
             "text_style": "caption-with-letter-spacing",
             "text_size": "small"
           }
@@ -196,20 +196,20 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Early birds save 20%",
+            "heading": "Halloween is coming",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Shop before the Halloween rush and take 20% off your entire order.</p>"
+            "text": "<p>Costumes, decor, and party essentials — be ready before the rush.</p>"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Claim the offer",
+            "button_label": "Shop the season",
             "button_link": "shopify://collections/all",
             "button_style_secondary": false,
             "button_label_2": "",
