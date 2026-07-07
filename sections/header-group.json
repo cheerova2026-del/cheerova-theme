@@ -11,6 +11,42 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "utility-bar": {
+      "type": "cheerova-utilbar",
+      "blocks": {
+        "u1": {
+          "type": "item",
+          "settings": {
+            "icon": "truck",
+            "text": "Free shipping over $50"
+          }
+        },
+        "u2": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "text": "30-day money-back guarantee"
+          }
+        },
+        "u3": {
+          "type": "item",
+          "settings": {
+            "icon": "headset",
+            "text": "24/7 customer support"
+          }
+        }
+      },
+      "block_order": [
+        "u1",
+        "u2",
+        "u3"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -62,6 +98,7 @@
     }
   },
   "order": [
+    "utility-bar",
     "announcement-bar",
     "header"
   ]
