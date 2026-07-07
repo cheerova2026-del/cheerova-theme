@@ -21,7 +21,7 @@
             "heading_size": "h1",
             "subheading": "Shop costumes, decorations, and inflatables before they’re gone",
             "button_label": "Shop Now",
-            "link": "",
+            "link": "shopify://collections/kids-girl-costumes",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-left",
