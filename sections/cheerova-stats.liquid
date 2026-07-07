@@ -1,0 +1,18 @@
+<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="page-width" style="padding-top:{{ section.settings.padding_top }}px;padding-bottom:{{ section.settings.padding_bottom }}px">
+{% if section.settings.heading != blank %}<h2 class="cheerova-stats__h">{{ section.settings.heading }}</h2>{% endif %}
+<div class="cheerova-stats-grid">
+{% for block in section.blocks %}<div class="cheerova-stat" {{ block.shopify_attributes }}><span class="cheerova-stat__num">{{ block.settings.number }}</span><span class="cheerova-stat__lbl">{{ block.settings.label }}</span></div>{% endfor %}
+</div>
+</div>
+</div>
+<style>
+.cheerova-stats__h{text-align:center;margin:0 0 24px;font-family:var(--font-heading-family);font-weight:var(--font-heading-weight);font-size:calc(var(--font-heading-scale)*2.4rem)}
+.cheerova-stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center}
+.cheerova-stat{display:flex;flex-direction:column;gap:4px}
+.cheerova-stat__num{font-family:var(--font-heading-family);font-weight:600;font-size:calc(var(--font-heading-scale)*3rem);color:#E8813A;line-height:1}
+.cheerova-stat__lbl{font-size:1.35rem;opacity:.8}
+</style>
+{% schema %}
+{"name":"Cheerova stats band","settings":[{"type":"text","id":"heading","label":"Heading","default":"Why shop with us"},{"type":"color_scheme","id":"color_scheme","label":"Color scheme","default":"scheme-1"},{"type":"range","id":"padding_top","min":0,"max":80,"step":4,"unit":"px","label":"Padding top","default":44},{"type":"range","id":"padding_bottom","min":0,"max":80,"step":4,"unit":"px","label":"Padding bottom","default":44}],"blocks":[{"type":"stat","name":"Stat","settings":[{"type":"text","id":"number","label":"Number","default":"100%"},{"type":"text","id":"label","label":"Label","default":"Secure checkout"}]}],"max_blocks":4,"presets":[{"name":"Cheerova stats band","blocks":[{"type":"stat","settings":{"number":"200+","label":"Costumes & styles"}},{"type":"stat","settings":{"number":"Fast","label":"Seasonal shipping"}},{"type":"stat","settings":{"number":"100%","label":"Secure checkout"}}]}]}
+{% endschema %}

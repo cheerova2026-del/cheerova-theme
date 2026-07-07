@@ -1,0 +1,20 @@
+<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="page-width" style="padding-top:{{ section.settings.padding_top }}px;padding-bottom:{{ section.settings.padding_bottom }}px">
+<div class="cheerova-feat-grid">
+{% for block in section.blocks %}<div class="cheerova-feat" {{ block.shopify_attributes }}><span class="cheerova-feat__icon">{% case block.settings.icon %}{% when 'truck' %}<svg viewBox="0 0 24 24"><path d="M3 6h11v9H3zM14 9h4l3 3v3h-7z"/><circle cx="7" cy="17" r="1.7"/><circle cx="17" cy="17" r="1.7"/></svg>{% when 'refresh' %}<svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4h-4" fill="none" stroke="currentColor" stroke-width="2"/></svg>{% when 'shield' %}<svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.4 9-8 11-4.6-2-8-6-8-11V5z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>{% when 'headset' %}<svg viewBox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="3" y="13" width="4" height="6" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="17" y="13" width="4" height="6" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>{% endcase %}</span><div class="cheerova-feat__txt"><strong>{{ block.settings.title }}</strong><span>{{ block.settings.subtitle }}</span></div></div>{% endfor %}
+</div>
+</div>
+</div>
+<style>
+.cheerova-feat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media(min-width:750px){.cheerova-feat-grid{grid-template-columns:repeat(4,1fr);gap:22px}}
+.cheerova-feat{display:flex;align-items:center;gap:12px;justify-content:center}
+.cheerova-feat__icon{color:#E8813A;flex-shrink:0}
+.cheerova-feat__icon svg{width:30px;height:30px;display:block;fill:currentColor}
+.cheerova-feat__txt{display:flex;flex-direction:column;line-height:1.3}
+.cheerova-feat__txt strong{font-size:1.45rem;font-weight:600}
+.cheerova-feat__txt span{font-size:1.25rem;opacity:.72}
+</style>
+{% schema %}
+{"name":"Cheerova trust badges","settings":[{"type":"color_scheme","id":"color_scheme","label":"Color scheme","default":"scheme-2"},{"type":"range","id":"padding_top","min":0,"max":80,"step":4,"unit":"px","label":"Padding top","default":28},{"type":"range","id":"padding_bottom","min":0,"max":80,"step":4,"unit":"px","label":"Padding bottom","default":28}],"blocks":[{"type":"feature","name":"Feature","settings":[{"type":"select","id":"icon","label":"Icon","default":"truck","options":[{"value":"truck","label":"Truck"},{"value":"refresh","label":"Refresh"},{"value":"shield","label":"Shield"},{"value":"headset","label":"Headset"}]},{"type":"text","id":"title","label":"Title","default":"Free shipping"},{"type":"text","id":"subtitle","label":"Subtitle","default":"On orders over $50"}]}],"max_blocks":4,"presets":[{"name":"Cheerova trust badges","blocks":[{"type":"feature","settings":{"icon":"truck","title":"Free shipping","subtitle":"On orders over $50"}},{"type":"feature","settings":{"icon":"refresh","title":"30-day returns","subtitle":"No-hassle returns"}},{"type":"feature","settings":{"icon":"shield","title":"Secure payment","subtitle":"100% secure checkout"}},{"type":"feature","settings":{"icon":"headset","title":"24/7 support","subtitle":"We're here to help"}}]}]}
+{% endschema %}
