@@ -53,7 +53,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Costumes for every soul — welcome to the manor",
+            "text": "Free Shipping on Orders Over $50",
             "link": ""
           }
         }
@@ -75,7 +75,7 @@
       "type": "header",
       "custom_css": [
         ".header__menu-item span {font-family: var(--font-heading-family); font-weight: 500; font-size: 1.45rem; letter-spacing: 0.08em; text-transform: uppercase;}",
-        ".header__menu-item:hover span {color: #E8813A;}",
+        ".header__menu-item:hover span {color: #e8813a;}",
         ".header__submenu .header__menu-item span {font-family: var(--font-body-family); font-size: 1.4rem; letter-spacing: 0.02em; text-transform: none;}",
         ".header__heading-link {letter-spacing: 0.16em; text-transform: uppercase;}"
       ],
