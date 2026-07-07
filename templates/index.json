@@ -65,6 +65,110 @@
         "padding_bottom": 36
       }
     },
+    "shop_by_category": {
+      "type": "cheerova-category-grid",
+      "blocks": {
+        "cat_1": {
+          "type": "category",
+          "settings": {
+            "collection": "adult-men-costumes",
+            "icon": "top_hat",
+            "icon_color": "orange"
+          }
+        },
+        "cat_2": {
+          "type": "category",
+          "settings": {
+            "collection": "adult-women-costumes",
+            "icon": "witch_hat",
+            "icon_color": "purple"
+          }
+        },
+        "cat_3": {
+          "type": "category",
+          "settings": {
+            "collection": "kids-boy-costumes",
+            "icon": "mask",
+            "icon_color": "orange"
+          }
+        },
+        "cat_4": {
+          "type": "category",
+          "settings": {
+            "collection": "kids-girl-costumes",
+            "icon": "crown",
+            "icon_color": "purple"
+          }
+        },
+        "cat_5": {
+          "type": "category",
+          "settings": {
+            "collection": "toddler-costumes",
+            "icon": "pumpkin",
+            "icon_color": "orange"
+          }
+        },
+        "cat_6": {
+          "type": "category",
+          "settings": {
+            "collection": "inflatable-costumes",
+            "icon": "ghost",
+            "icon_color": "purple"
+          }
+        },
+        "cat_7": {
+          "type": "category",
+          "settings": {
+            "collection": "indoor-halloween-decor",
+            "icon": "house",
+            "icon_color": "purple"
+          }
+        },
+        "cat_8": {
+          "type": "category",
+          "settings": {
+            "collection": "outdoor-halloween-decor",
+            "icon": "tombstone",
+            "icon_color": "orange"
+          }
+        },
+        "cat_9": {
+          "type": "category",
+          "settings": {
+            "collection": "skeletons-props",
+            "icon": "skull",
+            "icon_color": "purple"
+          }
+        },
+        "cat_10": {
+          "type": "category",
+          "settings": {
+            "collection": "accessories-party-supplies",
+            "icon": "candy",
+            "icon_color": "orange"
+          }
+        }
+      },
+      "block_order": [
+        "cat_1",
+        "cat_2",
+        "cat_3",
+        "cat_4",
+        "cat_5",
+        "cat_6",
+        "cat_7",
+        "cat_8",
+        "cat_9",
+        "cat_10"
+      ],
+      "settings": {
+        "heading": "Shop by category",
+        "subheading": "Explore costumes, decor, accessories, and party essentials.",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 44
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -91,95 +195,6 @@
         "columns_mobile": "2",
         "padding_top": 44,
         "padding_bottom": 36
-      }
-    },
-    "shop_by_category": {
-      "type": "collection-list",
-      "blocks": {
-        "cat_1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "adult-men-costumes"
-          }
-        },
-        "cat_2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "adult-women-costumes"
-          }
-        },
-        "cat_3": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "kids-boy-costumes"
-          }
-        },
-        "cat_4": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "kids-girl-costumes"
-          }
-        },
-        "cat_5": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "toddler-costumes"
-          }
-        },
-        "cat_6": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "inflatable-costumes"
-          }
-        },
-        "cat_7": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "indoor-halloween-decor"
-          }
-        },
-        "cat_8": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "outdoor-halloween-decor"
-          }
-        },
-        "cat_9": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "skeletons-props"
-          }
-        },
-        "cat_10": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "accessories-party-supplies"
-          }
-        }
-      },
-      "block_order": [
-        "cat_1",
-        "cat_2",
-        "cat_3",
-        "cat_4",
-        "cat_5",
-        "cat_6",
-        "cat_7",
-        "cat_8",
-        "cat_9",
-        "cat_10"
-      ],
-      "settings": {
-        "title": "Shop by category",
-        "heading_size": "h2",
-        "image_ratio": "square",
-        "columns_desktop": 5,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 44
       }
     },
     "promo": {
@@ -275,8 +290,8 @@
   },
   "order": [
     "hero",
-    "featured_collection",
     "shop_by_category",
+    "featured_collection",
     "promo",
     "about"
   ]
