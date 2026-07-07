@@ -9,53 +9,108 @@
  */
 {
   "sections": {
-    "image_banner_9EFVyR": {
-      "type": "image-banner",
+    "hero": {
+      "type": "image-with-text",
       "blocks": {
-        "heading_VmAYLM": {
-          "type": "heading",
+        "caption": {
+          "type": "caption",
           "settings": {
-            "heading": "Halloween Starts Here",
-            "heading_size": "h1"
+            "caption": "The house of Halloween",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "small"
           }
         },
-        "text_kUkmwD": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Halloween, tailored",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
           "type": "text",
           "settings": {
-            "text": "<strong>Costumes, Decor & Inflatables for Every Spooky Celebration</strong>",
+            "text": "<p>Premium costumes for adults, kids, and cosplay — welcome to the house of Halloween.</p>",
             "text_style": "body"
           }
         },
-        "buttons_9nPjQF": {
-          "type": "buttons",
+        "button": {
+          "type": "button",
           "settings": {
-            "button_label_1": "Costumes",
-            "button_link_1": "shopify://collections/adult-men-costumes",
-            "button_style_secondary_1": false,
-            "button_label_2": "Decorations",
-            "button_link_2": "shopify://collections/outdoor-halloween-decor",
-            "button_style_secondary_2": false
+            "button_label": "Shop costumes",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "heading_VmAYLM",
-        "text_kUkmwD",
-        "buttons_9nPjQF"
+        "caption",
+        "heading",
+        "text",
+        "button"
       ],
-      "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Jul_6_2026_09_32_35_PM.png",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "image_behavior": "fixed",
-        "desktop_content_position": "bottom-left",
+        "image": "shopify://shop_images/oy0ruAeL4bu1g2-X.jpg",
+        "height": "large",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "show_text_box": false,
-        "color_scheme": "",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 36
+      }
+    },
+    "trust_badges": {
+      "type": "cheerova-trust-badges",
+      "blocks": {
+        "f1": {
+          "type": "feature",
+          "settings": {
+            "icon": "truck",
+            "title": "Free shipping",
+            "subtitle": "On orders over $50"
+          }
+        },
+        "f2": {
+          "type": "feature",
+          "settings": {
+            "icon": "refresh",
+            "title": "30-day returns",
+            "subtitle": "No-hassle returns"
+          }
+        },
+        "f3": {
+          "type": "feature",
+          "settings": {
+            "icon": "shield",
+            "title": "Secure payment",
+            "subtitle": "100% secure checkout"
+          }
+        },
+        "f4": {
+          "type": "feature",
+          "settings": {
+            "icon": "headset",
+            "title": "24/7 support",
+            "subtitle": "We're here to help"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
     "shop_by_category": {
@@ -165,19 +220,20 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "all",
-        "products_to_show": 4,
         "title": "Featured costumes",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
+        "collection": "all",
+        "products_to_show": 4,
         "columns_desktop": 4,
-        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": false,
+        "swipe_on_mobile": false,
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -185,65 +241,45 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
       }
     },
-    "hero": {
-      "type": "image-with-text",
+    "stats": {
+      "type": "cheerova-stats",
       "blocks": {
-        "caption": {
-          "type": "caption",
+        "s1": {
+          "type": "stat",
           "settings": {
-            "caption": "The house of Halloween",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "small"
+            "number": "200+",
+            "label": "Costumes & styles"
           }
         },
-        "heading": {
-          "type": "heading",
+        "s2": {
+          "type": "stat",
           "settings": {
-            "heading": "Halloween, tailored",
-            "heading_size": "h0"
+            "number": "Fast",
+            "label": "Seasonal shipping"
           }
         },
-        "text": {
-          "type": "text",
+        "s3": {
+          "type": "stat",
           "settings": {
-            "text": "<p>Premium costumes for adults, kids, and cosplay — welcome to the house of Halloween.</p>",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop costumes",
-            "button_link": "shopify://collections/all",
-            "button_style_secondary": false
+            "number": "100%",
+            "label": "Secure checkout"
           }
         }
       },
       "block_order": [
-        "caption",
-        "heading",
-        "text",
-        "button"
+        "s1",
+        "s2",
+        "s3"
       ],
       "settings": {
-        "image": "shopify://shop_images/halloween-bats-background.jpg",
-        "height": "large",
-        "desktop_image_width": "large",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-1",
+        "heading": "Why shop with us",
         "color_scheme": "scheme-1",
-        "padding_top": 60,
-        "padding_bottom": 36
+        "padding_top": 44,
+        "padding_bottom": 44
       }
     },
     "promo": {
@@ -297,6 +333,44 @@
         "padding_bottom": 48
       }
     },
+    "testimonials": {
+      "type": "cheerova-testimonials",
+      "blocks": {
+        "t1": {
+          "type": "quote",
+          "settings": {
+            "quote": "The costume quality blew me away — it looked even better in person.",
+            "name": "Illustrative review"
+          }
+        },
+        "t2": {
+          "type": "quote",
+          "settings": {
+            "quote": "Arrived days before my party. The details are incredible.",
+            "name": "Illustrative review"
+          }
+        },
+        "t3": {
+          "type": "quote",
+          "settings": {
+            "quote": "My kids' costumes were the hit of the whole street.",
+            "name": "Illustrative review"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3"
+      ],
+      "settings": {
+        "heading": "What our customers say",
+        "subheading": "Illustrative reviews — replace with real customer quotes anytime.",
+        "color_scheme": "scheme-1",
+        "padding_top": 44,
+        "padding_bottom": 52
+      }
+    },
     "about": {
       "type": "rich-text",
       "blocks": {
@@ -338,11 +412,13 @@
     }
   },
   "order": [
-    "image_banner_9EFVyR",
+    "hero",
+    "trust_badges",
     "shop_by_category",
     "featured_collection",
-    "hero",
+    "stats",
     "promo",
+    "testimonials",
     "about"
   ]
 }
