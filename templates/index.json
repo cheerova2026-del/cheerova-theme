@@ -15,25 +15,25 @@
         "heading_VmAYLM": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Halloween Starts Here",
             "heading_size": "h1"
           }
         },
         "text_kUkmwD": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "<strong>Costumes, Decor & Inflatables for Every Spooky Celebration</strong>",
             "text_style": "body"
           }
         },
         "buttons_9nPjQF": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
+            "button_label_1": "Costumes",
+            "button_link_1": "shopify://collections/adult-men-costumes",
             "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
+            "button_label_2": "Decorations",
+            "button_link_2": "shopify://collections/outdoor-halloween-decor",
             "button_style_secondary_2": false
           }
         }
