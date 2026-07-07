@@ -37,8 +37,14 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        ".header__menu-item span {font-family: var(--font-heading-family); font-weight: 500; font-size: 1.45rem; letter-spacing: 0.08em; text-transform: uppercase;}",
+        ".header__menu-item:hover span {color: #E8813A;}",
+        ".header__submenu .header__menu-item span {font-family: var(--font-body-family); font-size: 1.4rem; letter-spacing: 0.02em; text-transform: none;}",
+        ".header__heading-link {letter-spacing: 0.16em; text-transform: uppercase;}"
+      ],
       "settings": {
-        "logo_position": "middle-center",
+        "logo_position": "middle-left",
         "mobile_logo_position": "center",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
