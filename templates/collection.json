@@ -17,55 +17,6 @@
         "color_scheme": "scheme-1"
       }
     },
-    "image_banner_8LMRzt": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_6rDN4T": {
-          "type": "heading",
-          "settings": {
-            "heading": "Girls Sparkly Magic Witch",
-            "heading_size": "h1"
-          }
-        },
-        "text_ecjAyF": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "body"
-          }
-        },
-        "buttons_w6VxY9": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "SHOP NOW",
-            "button_link_2": "shopify://products/girls-sparkly-magic-witch-halloween-costume-g-0218",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_6rDN4T",
-        "text_ecjAyF",
-        "buttons_w6VxY9"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Jul_9_2026_09_34_52_AM.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
-      }
-    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -89,7 +40,6 @@
   },
   "order": [
     "banner",
-    "image_banner_8LMRzt",
     "product-grid"
   ]
 }
