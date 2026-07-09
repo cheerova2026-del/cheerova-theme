@@ -38,10 +38,10 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "",
-            "button_link_1": "shopify://products/girls-sparkly-magic-witch-halloween-costume-g-0218",
+            "button_link_1": "",
             "button_style_secondary_1": false,
             "button_label_2": "SHOP NOW",
-            "button_link_2": "",
+            "button_link_2": "shopify://products/girls-sparkly-magic-witch-halloween-costume-g-0218",
             "button_style_secondary_2": false
           }
         }
