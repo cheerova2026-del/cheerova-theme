@@ -15,16 +15,16 @@
         "slide_aDcxBG": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Gemini_Generated_Image_8bzhkq8bzhkq8bzh.png",
+            "image": "shopify://shop_images/Gemini_Generated_Image_9atv909atv909atv.png",
             "image_overlay_opacity": 0,
             "heading": "Halloween 2026",
-            "heading_size": "h1",
-            "subheading": "Shop costumes, decorations, and inflatables before they’re gone",
+            "heading_size": "h0",
+            "subheading": "",
             "button_label": "Shop Now",
             "link": "shopify://collections/kids-girl-costumes",
             "button_style_secondary": false,
             "show_text_box": true,
-            "box_align": "middle-left",
+            "box_align": "bottom-left",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
             "color_scheme": ""
