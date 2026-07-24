@@ -18,7 +18,7 @@
           "type": "item",
           "settings": {
             "icon": "truck",
-            "text": "Free shipping over $50"
+            "text": "Free shipping over $70"
           }
         },
         "u2": {
@@ -53,7 +53,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Free Shipping on Orders Over $50",
+            "text": "Free Shipping on Orders Over $70",
             "link": ""
           }
         }
