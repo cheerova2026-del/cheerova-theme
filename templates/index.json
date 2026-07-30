@@ -16,7 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/halloween.png",
-            "image_overlay_opacity": 0,
+            "image_overlay_opacity": 30,
             "heading": "Halloween 2026",
             "heading_size": "h0",
             "subheading": "",
