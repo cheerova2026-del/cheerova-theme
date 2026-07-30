@@ -53,6 +53,12 @@
             "custom_liquid": "{% render 'wishlist-button', product: product %}"
           }
         },
+        "bogos_io_free_gift_bundle_view_nPmKCf": {
+          "type": "shopify://apps/bogos-io-free-gift/blocks/bundle-view/0432bba6-720a-4e95-be5a-b868386f7aa6",
+          "settings": {
+            "product": ""
+          }
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -80,6 +86,7 @@
         "quantity_selector",
         "buy_buttons",
         "wishlist",
+        "bogos_io_free_gift_bundle_view_nPmKCf",
         "description",
         "tab_sizing",
         "share"
