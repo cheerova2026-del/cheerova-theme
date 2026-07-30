@@ -47,6 +47,12 @@
             "show_gift_card_recipient": true
           }
         },
+        "bogos_io_free_gift_cart_discount_view_mcCnfd": {
+          "type": "shopify://apps/bogos-io-free-gift/blocks/cart-discount-view/0432bba6-720a-4e95-be5a-b868386f7aa6",
+          "settings": {
+            "product": ""
+          }
+        },
         "wishlist": {
           "type": "custom_liquid",
           "settings": {
@@ -85,6 +91,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "bogos_io_free_gift_cart_discount_view_mcCnfd",
         "wishlist",
         "bogos_io_free_gift_bundle_view_nPmKCf",
         "description",
