@@ -220,9 +220,9 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "kids-girl-costumes",
+        "collection": "costumes",
         "products_to_show": 4,
-        "title": "Featured Costumes for Girls",
+        "title": "Featured Costumes",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
