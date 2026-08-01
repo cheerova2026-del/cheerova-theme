@@ -80,7 +80,7 @@
           "type": "feature",
           "settings": {
             "icon": "refresh",
-            "title": "30-day returns",
+            "title": "15-day returns",
             "subtitle": "No-hassle returns"
           }
         },
