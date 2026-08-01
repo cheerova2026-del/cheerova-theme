@@ -336,7 +336,7 @@
           "type": "stat",
           "settings": {
             "number": "200+",
-            "label": "Costumes & styles"
+            "label": "Products in stock"
           }
         },
         "s2": {
