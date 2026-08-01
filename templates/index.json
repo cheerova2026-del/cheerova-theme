@@ -248,9 +248,9 @@
     "featured_collection_b8YUm8": {
       "type": "featured-collection",
       "settings": {
-        "collection": "kids-boy-costumes",
+        "collection": "decorations",
         "products_to_show": 4,
-        "title": "Featured Costumes for Boys",
+        "title": "Featured Decorations",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
