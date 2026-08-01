@@ -335,7 +335,7 @@
         "s1": {
           "type": "stat",
           "settings": {
-            "number": "200+",
+            "number": "180+",
             "label": "Products in stock"
           }
         },
