@@ -60,6 +60,26 @@ if (!customElements.get('product-form')) {
               this.dispatchCartErrorEvent(response.description || response.message, 'INVALID');
               linesUpdateDeferred?.reject(new Error(response.description || response.message));
 
+              if (this.cart) {
+  const sections = this.cart
+    .getSectionsToRender()
+    .map((section) => section.id)
+    .join(',');
+
+  fetch(
+    routes.cart_url +
+      '.js?sections=' +
+      encodeURIComponent(sections) +
+      '&sections_url=' +
+      encodeURIComponent(window.location.pathname)
+  )
+    .then((cartResponse) => cartResponse.json())
+    .then((cartState) => {
+      if (cartState.sections) this.cart.renderContents(cartState);
+    })
+    .catch((error) => console.error('Unable to refresh cart drawer:', error));
+}
+
               const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
               if (!soldOutMessage) return;
               this.submitButton.setAttribute('aria-disabled', true);
