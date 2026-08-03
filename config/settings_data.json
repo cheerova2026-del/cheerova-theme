@@ -16,6 +16,7 @@
     "heading_scale": 110,
     "type_body_font": "assistant_n4",
     "card_color_scheme": "scheme-2",
+    "card_corner_radius": 8,
     "collection_card_color_scheme": "scheme-2",
     "blog_card_color_scheme": "scheme-2",
     "sale_badge_color_scheme": "scheme-4",
