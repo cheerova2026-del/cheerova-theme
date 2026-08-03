@@ -18,45 +18,37 @@
           "type": "text",
           "settings": {
             "heading": "Cheerova",
-            "subtext": "<p>The house of Halloween — premium costumes, decor, and party essentials for the season we love most.</p>"
+            "subtext": "<p>Halloween costumes, decorations, inflatables, and party essentials for every celebration.</p>"
           }
         },
         "col_costumes": {
           "type": "link_list",
           "settings": {
-            "heading": "Costumes",
+            "heading": "Customer Care",
             "menu": "footer-shop"
           }
         },
         "col_decor": {
           "type": "link_list",
           "settings": {
-            "heading": "Decor & more",
+            "heading": "About Cheerova",
             "menu": "footer-decor-more"
-          }
-        },
-        "col_support": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Support",
-            "menu": "footer"
           }
         }
       },
       "block_order": [
         "brand",
         "col_costumes",
-        "col_decor",
-        "col_support"
+        "col_decor"
       ],
       "settings": {
         "color_scheme": "scheme-2",
         "newsletter_enable": true,
-        "newsletter_heading": "Join the list — early access & secret offers",
+        "newsletter_heading": "Stay connected",
         "enable_follow_on_shop": false,
         "show_social": true,
         "enable_country_selector": true,
-        "enable_language_selector": true,
+        "enable_language_selector": false,
         "payment_enable": true,
         "show_policy": true,
         "margin_top": 0,
