@@ -60,22 +60,22 @@ if (!customElements.get('product-form')) {
               this.dispatchCartErrorEvent(response.description || response.message, 'INVALID');
               linesUpdateDeferred?.reject(new Error(response.description || response.message));
 
-              if (this.cart) {
+             if (this.cart) {
   const sections = this.cart
     .getSectionsToRender()
     .map((section) => section.id)
     .join(',');
 
-  fetch(
-    routes.cart_url +
-      '.js?sections=' +
-      encodeURIComponent(sections) +
-      '&sections_url=' +
-      encodeURIComponent(window.location.pathname)
-  )
+  const sectionsUrl = new URL(window.location.href);
+  sectionsUrl.searchParams.set('sections', sections);
+
+  fetch(sectionsUrl.toString())
     .then((cartResponse) => cartResponse.json())
-    .then((cartState) => {
-      if (cartState.sections) this.cart.renderContents(cartState);
+    .then((renderedSections) => {
+      this.cart.renderContents({
+        id: variantId,
+        sections: renderedSections,
+      });
     })
     .catch((error) => console.error('Unable to refresh cart drawer:', error));
 }
