@@ -41,6 +41,9 @@
         "col_costumes",
         "col_decor"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.footer-block:first-child .footer-block__details-content {max-width: 30rem; }}"
+      ],
       "settings": {
         "color_scheme": "scheme-2",
         "newsletter_enable": true,
