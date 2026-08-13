@@ -32,7 +32,7 @@
       },
       "1132875404383792405": {
         "type": "shopify://apps/instaindex/blocks/seo-tags/b4acb396-1232-4a24-bdc0-89d05041b7ff",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
       }
     },
