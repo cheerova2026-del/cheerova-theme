@@ -73,7 +73,7 @@
           "settings": {
             "icon": "truck",
             "title": "Free shipping",
-            "subtitle": "For Most of the Items"
+            "subtitle": "On select items, no minimum"
           }
         },
         "f2": {
@@ -280,7 +280,7 @@
         "s1": {
           "type": "stat",
           "settings": {
-            "number": "180+",
+            "number": "50+",
             "label": "Products in stock"
           }
         },
