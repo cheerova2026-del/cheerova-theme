@@ -1495,6 +1495,12 @@ a.product__text {
 
 /* Cheerova: mobile sticky Add to Cart */
 @media screen and (max-width: 749px) {
+  product-info[id^='MainProduct-'] .product__info-wrapper.scroll-trigger.animate--slide-in {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
   product-info[id^='MainProduct-'] .product-form__submit {
     position: fixed;
     z-index: 4;
