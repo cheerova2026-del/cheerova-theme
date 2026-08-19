@@ -24,7 +24,7 @@
         "#product-grid .card > .card__content .card__heading {display: -webkit-box; min-height: 2.6em; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}"
       ],
       "settings": {
-        "products_per_page": 16,
+        "products_per_page": 24,
         "columns_desktop": 4,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
