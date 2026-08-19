@@ -1492,3 +1492,17 @@ a.product__text {
     border: none;
   }
 }
+
+/* Cheerova: mobile sticky Add to Cart */
+@media screen and (max-width: 749px) {
+  product-info[id^='MainProduct-'] .product-form__submit {
+    position: fixed;
+    z-index: 4;
+    right: 1.6rem;
+    bottom: max(1.2rem, env(safe-area-inset-bottom));
+    left: 1.6rem;
+    width: auto;
+    margin: 0;
+    box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.25);
+  }
+}
