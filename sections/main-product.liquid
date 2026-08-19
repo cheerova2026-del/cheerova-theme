@@ -220,6 +220,8 @@
                 {%- when 'custom_liquid' -%}
                   {{ block.settings.custom_liquid }}
                 {%- when 'collapsible_tab' -%}
+                  {%- assign product_type_downcase = product.type | downcase -%}
+                  {%- if block.id != 'tab_sizing' or product_type_downcase contains 'costume' -%}
                   <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                     <details id="Details-{{ block.id }}-{{ section.id }}">
                       <summary>
@@ -237,6 +239,7 @@
                       </div>
                     </details>
                   </div>
+                {%- endif -%}
                 {%- when 'quantity_selector' -%}
                   <div
                     id="Quantity-Form-{{ section.id }}"
