@@ -498,11 +498,13 @@
                     surface: 'product_page'
                   -%}
                 {%- when 'variant_picker' -%}
+                  {%- unless product.has_only_default_variant -%}
                   {% render 'product-variant-picker',
                     product: product,
                     block: block,
                     product_form_id: product_form_id
                   %}
+                {%- endunless -%}
                 {%- when 'buy_buttons' -%}
                   {%- render 'buy-buttons',
                     block: block,
