@@ -498,7 +498,7 @@
                     surface: 'product_page'
                   -%}
                 {%- when 'variant_picker' -%}
-                  {%- unless product.has_only_default_variant -%}
+                  {%- unless product.has_only_default_variant or product.variants.size == 1 -%}
                   {% render 'product-variant-picker',
                     product: product,
                     block: block,
