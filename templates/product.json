@@ -12,7 +12,7 @@
     "breadcrumbs": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<nav class=\"page-width\" aria-label=\"breadcrumbs\" style=\"padding:1.8rem 0 0;font-size:1.3rem;opacity:.75;\"><a href=\"/\" style=\"color:currentColor;text-decoration:none;\">Home</a><span aria-hidden=\"true\"> / </span><a href=\"/collections/all\" style=\"color:currentColor;text-decoration:none;\">Shop</a><span aria-hidden=\"true\"> / </span><span>{{ product.title }}</span></nav>",
+        "custom_liquid": "<nav class=\"page-width\" aria-label=\"breadcrumbs\" style=\"padding:1.8rem 0 0;font-size:1.3rem;opacity:.75;\"><a href=\"/\" style=\"color:currentColor;text-decoration:none;\">Home</a><span aria-hidden=\"true\"> / </span><a href=\"/collections/halloween\" style=\"color:currentColor;text-decoration:none;\">Shop</a><span aria-hidden=\"true\"> / </span><span>{{ product.title }}</span></nav>",
         "color_scheme": "scheme-1",
         "padding_top": 0,
         "padding_bottom": 0
