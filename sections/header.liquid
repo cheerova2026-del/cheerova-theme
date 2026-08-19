@@ -445,16 +445,17 @@
     {% if settings.logo %}
       "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
     {% endif %}
+    {%- assign social_setting_ids = 'social_twitter_link,social_facebook_link,social_pinterest_link,social_instagram_link,social_tiktok_link,social_tumblr_link,social_snapchat_link,social_youtube_link,social_vimeo_link' | split: ',' -%}
+{%- assign first_social_link = true -%}
     "sameAs": [
-      {{ settings.social_twitter_link | json }},
-      {{ settings.social_facebook_link | json }},
-      {{ settings.social_pinterest_link | json }},
-      {{ settings.social_instagram_link | json }},
-      {{ settings.social_tiktok_link | json }},
-      {{ settings.social_tumblr_link | json }},
-      {{ settings.social_snapchat_link | json }},
-      {{ settings.social_youtube_link | json }},
-      {{ settings.social_vimeo_link | json }}
+      {%- for social_setting_id in social_setting_ids -%}
+        {%- assign social_link = settings[social_setting_id] -%}
+        {%- if social_link != blank -%}
+          {%- unless first_social_link -%},{%- endunless -%}
+          {{ social_link | json }}
+          {%- assign first_social_link = false -%}
+        {%- endif -%}
+      {%- endfor -%}
     ],
     "url": {{ request.origin | append: page.url | json }}
   }
