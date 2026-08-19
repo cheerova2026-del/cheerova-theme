@@ -19,6 +19,10 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "custom_css": [
+        "#product-grid > .grid__item > product-component {display: block; height: 100%;}",
+        "#product-grid .card > .card__content .card__heading {display: -webkit-box; min-height: 2.6em; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}"
+      ],
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
